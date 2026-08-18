@@ -26,3 +26,24 @@ def tijera(item_enemigo):
     elif item_enemigo == 'lagarto':
         print('Tijera decapita lagarto')
         print('Ganaste!')
+
+
+# funciones flo 
+# aclaración para mi: item_enemigo es el del compu, no el input!
+
+def lagarto(item_enemigo):
+    if item_enemigo == "piedra":
+        print("Piedra aplasta lagarto")
+        print("Perdiste")
+
+    elif item_enemigo == "papel":
+        print("Lagarto come papel")
+        print("Ganaste!")
+
+    elif item_enemigo == "tijera":
+        print("Tijera decapita lagarto")
+        print("Perdiste")
+
+    elif item_enemigo == "spock":
+        print("Lagarto envenena a spock")
+        print("Ganaste!")
