@@ -49,3 +49,19 @@ def lagarto(item_enemigo):
         print("Ganaste!")
 
 
+def piedra(item_enemigo):
+    if item_enemigo == "tijera":
+        print("Piedra rompe tijera")
+        print("Ganaste!")
+
+    elif item_enemigo == "papel":
+        print("Papel cubre piedra")
+        print("Perdiste")
+
+    elif item_enemigo == "spock":
+        print("Spock vaporiza piedra")
+        print("Perdiste")
+
+    elif item_enemigo == "lagarto":
+        print("Piedra aplasta lagarto")
+        print("Ganaste!")
