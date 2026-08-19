@@ -81,3 +81,5 @@ def piedra(item_enemigo):
     elif item_enemigo == "lagarto":
         print("Piedra aplasta lagarto")
         print("Ganaste!")
+
+#no funciono el auto merge :c
