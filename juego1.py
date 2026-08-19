@@ -49,37 +49,21 @@ def lagarto(item_enemigo):
         print("Ganaste!")
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-a
-def papel(item_enemigo):
-    if item_enemigo == "piedra":
-        print("Papel cubre piedra")
+def piedra(item_enemigo):
+    if item_enemigo == "tijera":
+        print("Piedra rompe tijera")
         print("Ganaste!")
 
-    elif item_enemigo == "tijera":
-        print("Tijera corta papel")
+    elif item_enemigo == "papel":
+        print("Papel cubre piedra")
         print("Perdiste")
 
     elif item_enemigo == "spock":
-        print('Papel desaprueba a Spock')
-        print("Ganaste!")
+        print("Spock vaporiza piedra")
+        print("Perdiste")
 
     elif item_enemigo == "lagarto":
-        print("Lagarto come papel")
-        print("Perdiste")
+        print("Piedra aplasta lagarto")
+        print("Ganaste!")
+
+a
