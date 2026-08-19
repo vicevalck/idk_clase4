@@ -47,3 +47,38 @@ def lagarto(item_enemigo):
     elif item_enemigo == "spock":
         print("Lagarto envenena a spock")
         print("Ganaste!")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+def papel(item_enemigo):
+    if item_enemigo == "piedra":
+        print("Papel cubre piedra")
+        print("Ganaste!")
+
+    elif item_enemigo == "tijera":
+        print("Tijera corta papel")
+        print("Perdiste")
+
+    elif item_enemigo == "spock":
+        print('Papel desaprueba a Spock')
+        print("Ganaste!")
+
+    elif item_enemigo == "lagarto":
+        print("Lagarto come papel")
+        print("Perdiste")
