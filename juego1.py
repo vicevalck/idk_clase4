@@ -66,4 +66,47 @@ def piedra(item_enemigo):
         print("Piedra aplasta lagarto")
         print("Ganaste!")
 
-a
+def papel(item_enemigo):
+    if item_enemigo == "piedra":
+        print("Papel cubre piedra")
+        print("Ganaste!")
+
+    elif item_enemigo == "tijera":
+        print("Tijera corta papel")
+        print("Perdiste")
+
+    elif item_enemigo == "spock":
+        print('Papel desaprueba a Spock')
+        print("Ganaste!")
+
+    elif item_enemigo == "lagarto":
+        print("Lagarto come papel")
+        print("Perdiste")
+
+import random as r
+
+print('Inicia Juego!!')
+
+mano_jugador = input('Escoge: piedra, papel, tijera, lagarto o spock: ')
+
+opciones = ['piedra', 'papel', 'tijera', 'lagarto','spock']
+
+while mano_jugador.lower() not in opciones:
+    mano_jugador = input('Escoge: piedra, papel, tijera, lagarto o spock')
+
+mano_jugador = mano_jugador.lower()
+
+enemigo = r.choice(opciones)
+
+if enemigo == mano_jugador:
+    print('Empate!')
+elif mano_jugador == 'piedra':
+    piedra(enemigo)
+elif mano_jugador == 'papel':
+    papel(enemigo)
+elif mano_jugador == 'tijera':
+    tijera(enemigo)
+elif mano_jugador == 'lagarto':
+    lagarto(enemigo)
+else:
+    spock(enemigo)
